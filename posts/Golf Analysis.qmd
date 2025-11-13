@@ -4,22 +4,35 @@ author: "Adam Bitner"
 format: html
 editor: visual
 ---
+
 ```{r, echo=FALSE, include=FALSE}
 library(tidyverse)
 library(ggplot2)
 df <- read_csv('../data/golf_data.csv')
 ```
+
 # Golf Analysis: What Really Matters
+
 ## Introduction
-"Drive for show, putt for dough," the famous line any golfer has heard countless times. Throughout a golfers journey to get better the natural question always arises: "what should I practice?" This is an important question because there are so many different parts of any golfers game, and for any amateur they could most assuredly improve in every aspect of the sport. But with limited time, money and effort they obviously can't practice it all all the time. So most people tend to always say: short game is king. Or in other words "practice putting and chipping more than anything else". But is this true? Sure, three putts and bad chips can compound throughout 18 holes to make a worse score, but so can out of bounds drives, so can shanked approach shots, and so can hitting hazards. So this analysis aims to answer the question: what really leads to low scores?
+
+"Drive for show, putt for dough," the famous line any golfer has heard countless times. Throughout a golfers journey to get better the natural question always arises: "what should I practice?" This is an important question because there are so many different parts of any golfers game, and for any amateur they could most assuredly improve in every aspect of the sport. But with limited time, money and effort they obviously can't practice it all all the time. So most people tend to always say: short game is king. Or in other words "practice putting and chipping more than anything else". But is this true? Sure, three putts and bad chips can compound throughout 18 holes to make a worse score, but so can out of bounds drives, so can shanked approach shots, and so can hitting hazards. So this analysis aims to answer the question: what really leads to low scores? 
+
 ## Overview of Data
+
 The data used for this analysis comes from the PGA tour. It includes 177 different PGA tour pros, and we will be looking at things like green in regulation, fairways in regulation, driving distance, putts per round, scrambling percentage, and a players scoring average for the 2025 season. We will be looking at all of these variables and seeing how they relate to the players scoring average to see if any relationships show up. Below is a head of the data:
+
 ```{r, echo=FALSE}
 head(df)
 ```
+
+If you want to see how I got the data, go to this repository: https://github.com/Oldarmor/data_acquisition_blog.git
+
 ## Data Analysis
+
 ### Initial Plots
+
 Below are plots showing each of the possible predictor variables in relation to the response (Average Score). We are looking for which predictors have a strong relationship between the predictor and response. It doesn't necessarily have to be linear, but just which predictors drive scoring average down the most.
+
 ```{r, echo=FALSE}
 # Driving Distance vs AVG
 ggplot(df, aes(x = driving_distance_AVG, y = AVG)) +
@@ -78,9 +91,12 @@ ggplot(df, aes(x = `scrambling_%`, y = AVG)) +
 
 ```
 
-From those plots we can see something variables with the strongest effect on scoring average seem to actually be greens in regulation, and scrambling percentage. The more greens in regulation and the better at scrambling a player is, the better their score is. Which as a golfer makes sense intuitively, hitting a green in regulation really limits the possibility of having a really high score on a hole. Also by the definition of scrambling (recording par or better whenever you're not on green in regulation) it makes sense that having a higher scrambling percentage would drive down a players scoring average.
+From those plots we can see something variables with the strongest effect on scoring average seem to actually be greens in regulation, and scrambling percentage. The more greens in regulation and the better at scrambling a player is, the better their score is. Which as a golfer makes sense intuitively, hitting a green in regulation really limits the possibility of having a really high score on a hole. Also by the definition of scrambling (recording par or better whenever you're not on green in regulation) it makes sense that having a higher scrambling percentage would drive down a players scoring average. 
+
 ### Deeper Analysis
+
 While the initial insights are interesting, it also brings up more questions that need to be investigated. Truth is: a player can't have good scrambling percentage if they are terrible and putting. Also recording a successful scramble requires that you have at most one putt on a hole. So below is a plot of scrambling percentage as a function of putts per round, and we would expect less putts to correlate with higher scrambling percentage:
+
 ```{r, echo=FALSE}
 ggplot(df, aes(x = putting_AVG, y = `scrambling_%`)) +
   geom_point(color = "#9B323C", size = 3, alpha = 0.7) +
@@ -92,13 +108,16 @@ ggplot(df, aes(x = putting_AVG, y = `scrambling_%`)) +
     y = "Scrambling Percentage"
   )
 ```
+
 ```{r, echo=FALSE, include=FALSE}
 scramble_mod <- lm(`scrambling_%` ~ putting_AVG, df)
 cor(df$putting_AVG, df$`scrambling_%`)
 ```
+
 The relationship expected is clear: better putting leads to better scrambling. Fitting a quick linear model we see that the slope is -2.8, meaning as you have more putts your scrambling percentage goes up by roughly 2.8% per extra putt you have per round.
 
 Another interesting thing worth looking at would be how hitting a fairway off the tee would affect your chances of hitting a green in regulation. I would expect more fairways hit would result in more greens in regulation. Below is a plot showing the green in regulation percentage as a function of fairway percentage:
+
 ```{r, echo=FALSE}
 ggplot(df, aes(x = `fir_%`, y = `gir_%`)) +
   geom_point(color = "#9B3", size = 3, alpha = 0.7) +
@@ -110,6 +129,7 @@ ggplot(df, aes(x = `fir_%`, y = `gir_%`)) +
     y = "Green in Regulation Percentage"
   )
 ```
+
 ```{r, echo=FALSE, include=FALSE}
 quick_mod <- lm(`gir_%` ~ `fir_%`, df)
 cor(df$`fir_%`, df$`gir_%`)
@@ -118,6 +138,7 @@ cor(df$`fir_%`, df$`gir_%`)
 There is another correlation here but it's not as clear. Still an upward trend, but fitting a quick linear model shows that every 1 percent increase in in fairway percentage only results in a 0.22 percent increase in green in regulation percentage.
 
 ## Conclusion
+
 Overall answering the question of "which part of my game do I need to practice" is very complicated. Initial analysis of top level players shows that what really makes the difference for them is their scrambling ability and greens in regulation. In reality though that makes sense, getting consistent greens in regulations limits terribly high scores, and being able to confidently and consistently scramble protects against high scores as well. While putting is a part of scrambling, this analysis suggests players should spend more time with their wedges in hand, hitting greens, and chipping onto them. That's what makes a difference.
 
-There are also plenty of ways that this analysis can be built upon. In reality this was a quick analysis, with plenty of other statistics and recorded values that could also very strongly effect  a players scoring average. Things like average distance to hole after approach, the spread of a players tee shots, and their abilities out of the rough all can differ and all can affect a players score. In addition, there's also probably some interaction effects that also make a difference in a players score. Golf is such a mental game, a big part of scoring well is playing with confidence. That mental component could very much lead and effect a players ability to play in the middle of a tournament, for example hitting the fairway off the tee, then hitting a green in regulation could effect a players confidence, hence affecting their ability to make the putt. All things to consider when trying to figure out ways to improve. Regardless though, the gameplan should be the same for all levels: get to the green as quickly as possible.
+There are also plenty of ways that this analysis can be built upon. In reality this was a quick analysis, with plenty of other statistics and recorded values that could also very strongly effect a players scoring average. Things like average distance to hole after approach, the spread of a players tee shots, and their abilities out of the rough all can differ and all can affect a players score. In addition, there's also probably some interaction effects that also make a difference in a players score. Golf is such a mental game, a big part of scoring well is playing with confidence. That mental component could very much lead and effect a players ability to play in the middle of a tournament, for example hitting the fairway off the tee, then hitting a green in regulation could effect a players confidence, hence affecting their ability to make the putt. All things to consider when trying to figure out ways to improve. Regardless though, the gameplan should be the same for all levels: get to the green as quickly as possible.
