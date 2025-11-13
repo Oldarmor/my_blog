@@ -1,0 +1,24 @@
+project:
+  type: website
+
+website:
+  title: "Adam's Blog"
+  description: "Stats, coding, faith, and reflections"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: posts/
+        text: Posts
+  page-footer:
+    center: "© 2025 Adam Bitner"
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+
+
+
