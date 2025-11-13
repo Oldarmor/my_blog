@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://Oldarmor.github.io/my_blog/posts/welcome/index.html</loc>
-    <lastmod>2025-11-13T03:58:18.651Z</lastmod>
-  </url>
-  <url>
     <loc>https://Oldarmor.github.io/my_blog/posts/Golf Analysis.html</loc>
-    <lastmod>2025-11-13T03:58:18.647Z</lastmod>
+    <lastmod>2025-11-13T04:19:57.371Z</lastmod>
   </url>
   <url>
     <loc>https://Oldarmor.github.io/my_blog/about.html</loc>
@@ -15,9 +11,5 @@
   <url>
     <loc>https://Oldarmor.github.io/my_blog/index.html</loc>
     <lastmod>2025-11-13T03:58:18.647Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Oldarmor.github.io/my_blog/posts/post-with-code/index.html</loc>
-    <lastmod>2025-11-13T03:58:18.651Z</lastmod>
   </url>
 </urlset>
