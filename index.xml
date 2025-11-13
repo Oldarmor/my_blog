@@ -10,7 +10,7 @@
 <atom:link href="https://Oldarmor.github.io/my_blog/index.xml" rel="self" type="application/rss+xml"/>
 <description>Stats, coding, faith, and reflections</description>
 <generator>quarto-1.8.24</generator>
-<lastBuildDate>Thu, 13 Nov 2025 04:21:23 GMT</lastBuildDate>
+<lastBuildDate>Thu, 13 Nov 2025 04:24:14 GMT</lastBuildDate>
 <item>
   <title>Golf Analysis</title>
   <dc:creator>Adam Bitner</dc:creator>
@@ -139,7 +139,7 @@
 
  ]]></description>
   <guid>https://Oldarmor.github.io/my_blog/posts/Golf Analysis.html</guid>
-  <pubDate>Thu, 13 Nov 2025 04:21:23 GMT</pubDate>
+  <pubDate>Thu, 13 Nov 2025 04:24:14 GMT</pubDate>
 </item>
 </channel>
 </rss>
