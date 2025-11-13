@@ -15,7 +15,7 @@ df <- read_csv('../data/golf_data.csv')
 
 ## Introduction
 
-"Drive for show, putt for dough," the famous line any golfer has heard countless times. Throughout a golfers journey to get better the natural question always arises: "what should I practice?" This is an important question because there are so many different parts of any golfers game, and for any amateur they could most assuredly improve in every aspect of the sport. But with limited time, money and effort they obviously can't practice it all all the time. So most people tend to always say: short game is king. Or in other words "practice putting and chipping more than anything else". But is this true? Sure, three putts and bad chips can compound throughout 18 holes to make a worse score, but so can out of bounds drives, so can shanked approach shots, and so can hitting hazards. So this analysis aims to answer the question: what really leads to low scores? 
+"Drive for show, putt for dough," the famous line any golfer has heard countless times. Throughout a golfers journey to get better the natural question always arises: "what should I practice?" This is an important question because there are so many different parts of any golfers game, and for any amateur they could most assuredly improve in every aspect of the sport. But with limited time, money and effort they obviously can't practice it all all the time. So most people tend to always say: short game is king. Or in other words "practice putting and chipping more than anything else". But is this true? Sure, three putts and bad chips can compound throughout 18 holes to make a worse score, but so can out of bounds drives, so can shanked approach shots, and so can hitting hazards. So this analysis aims to answer the question: what really leads to low scores?
 
 ## Overview of Data
 
@@ -91,7 +91,7 @@ ggplot(df, aes(x = `scrambling_%`, y = AVG)) +
 
 ```
 
-From those plots we can see something variables with the strongest effect on scoring average seem to actually be greens in regulation, and scrambling percentage. The more greens in regulation and the better at scrambling a player is, the better their score is. Which as a golfer makes sense intuitively, hitting a green in regulation really limits the possibility of having a really high score on a hole. Also by the definition of scrambling (recording par or better whenever you're not on green in regulation) it makes sense that having a higher scrambling percentage would drive down a players scoring average. 
+From those plots we can see something variables with the strongest effect on scoring average seem to actually be greens in regulation, and scrambling percentage. The more greens in regulation and the better at scrambling a player is, the better their score is. Which as a golfer makes sense intuitively, hitting a green in regulation really limits the possibility of having a really high score on a hole. Also by the definition of scrambling (recording par or better whenever you're not on green in regulation) it makes sense that having a higher scrambling percentage would drive down a players scoring average.
 
 ### Deeper Analysis
 
