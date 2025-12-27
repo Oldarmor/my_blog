@@ -14,6 +14,13 @@
     "text": "“Drive for show, putt for dough,” the famous line any golfer has heard countless times. Throughout a golfers journey to get better the natural question always arises: “what should I practice?” This is an important question because there are so many different parts of any golfers game, and for any amateur they could most assuredly improve in every aspect of the sport. But with limited time, money and effort they obviously can’t practice it all all the time. So most people tend to always say: short game is king. Or in other words “practice putting and chipping more than anything else”. But is this true? Sure, three putts and bad chips can compound throughout 18 holes to make a worse score, but so can out of bounds drives, so can shanked approach shots, and so can hitting hazards. So this analysis aims to answer the question: what really leads to low scores?"
   },
   {
+    "objectID": "posts/Golf Analysis.html#overview-of-data",
+    "href": "posts/Golf Analysis.html#overview-of-data",
+    "title": "Golf Analysis",
+    "section": "",
+    "text": "The data used for this analysis comes from the PGA tour. It includes 177 different PGA tour pros, and we will be looking at things like green in regulation, fairways in regulation, driving distance, putts per round, scrambling percentage, and a players scoring average for the 2025 season. We will be looking at all of these variables and seeing how they relate to the players scoring average to see if any relationships show up. Below is a head of the data:\n\n\n# A tibble: 6 × 8\n  PLAYER_ID PLAYER          AVG driving_distance_AVG `fir_%` `gir_%` putting_AVG\n      &lt;dbl&gt; &lt;chr&gt;         &lt;dbl&gt;                &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;       &lt;dbl&gt;\n1     46046 Scottie Sche…  68.1                 308.    63.0    71.4        28.0\n2     28237 Rory McIlroy   69.1                 323     51.2    67.7        28.6\n3     30911 Tommy Fleetw…  69.4                 299.    65.4    65.8        28.2\n4     54591 Ben Griffin    69.7                 305.    60.0    69.7        28.7\n5     34098 Russell Henl…  69.8                 289.    68.7    70.1        28.8\n6     57975 Harry Hall     69.8                 304.    58.0    65.0        27.4\n# ℹ 1 more variable: `scrambling_%` &lt;dbl&gt;\n\n\nIf you want to see how I got the data, go to this repository: https://github.com/Oldarmor/data_acquisition_blog.git"
+  },
+  {
     "objectID": "posts/Golf Analysis.html#data-analysis",
     "href": "posts/Golf Analysis.html#data-analysis",
     "title": "Golf Analysis",
@@ -40,12 +47,5 @@
     "title": "my_blog",
     "section": "",
     "text": "Golf Analysis\n\n\n\n\n\n\n\n\nAdam Bitner\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/Golf Analysis.html#overview-of-data",
-    "href": "posts/Golf Analysis.html#overview-of-data",
-    "title": "Golf Analysis",
-    "section": "",
-    "text": "The data used for this analysis comes from the PGA tour. It includes 177 different PGA tour pros, and we will be looking at things like green in regulation, fairways in regulation, driving distance, putts per round, scrambling percentage, and a players scoring average for the 2025 season. We will be looking at all of these variables and seeing how they relate to the players scoring average to see if any relationships show up. Below is a head of the data:\n\n\n# A tibble: 6 × 8\n  PLAYER_ID PLAYER          AVG driving_distance_AVG `fir_%` `gir_%` putting_AVG\n      &lt;dbl&gt; &lt;chr&gt;         &lt;dbl&gt;                &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;       &lt;dbl&gt;\n1     46046 Scottie Sche…  68.1                 308.    63.0    71.4        28.0\n2     28237 Rory McIlroy   69.1                 323     51.2    67.7        28.6\n3     30911 Tommy Fleetw…  69.4                 299.    65.4    65.8        28.2\n4     54591 Ben Griffin    69.7                 305.    60.0    69.7        28.7\n5     34098 Russell Henl…  69.8                 289.    68.7    70.1        28.8\n6     57975 Harry Hall     69.8                 304.    58.0    65.0        27.4\n# ℹ 1 more variable: `scrambling_%` &lt;dbl&gt;\n\n\nIf you want to see how I got the data, go to this repository: https://github.com/Oldarmor/data_acquisition_blog.git"
   }
 ]
