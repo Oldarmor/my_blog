@@ -1,5 +1,26 @@
 [
   {
+    "objectID": "posts/index.html",
+    "href": "posts/index.html",
+    "title": "Posts",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "My Blog",
+    "section": "",
+    "text": "Golf Analysis\n\n\n\n\n\n\n\n\nAdam Bitner\n\n\n\n\n\n\n\n\n\n\n\n\nPosts\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
     "objectID": "posts/Golf Analysis.html",
     "href": "posts/Golf Analysis.html",
     "title": "Golf Analysis",
@@ -33,19 +54,5 @@
     "title": "Golf Analysis",
     "section": "",
     "text": "Overall answering the question of “which part of my game do I need to practice” is very complicated. Initial analysis of top level players shows that what really makes the difference for them is their scrambling ability and greens in regulation. In reality though that makes sense, getting consistent greens in regulations limits terribly high scores, and being able to confidently and consistently scramble protects against high scores as well. While putting is a part of scrambling, this analysis suggests players should spend more time with their wedges in hand, hitting greens, and chipping onto them. That’s what makes a difference.\nThere are also plenty of ways that this analysis can be built upon. In reality this was a quick analysis, with plenty of other statistics and recorded values that could also very strongly effect a players scoring average. Things like average distance to hole after approach, the spread of a players tee shots, and their abilities out of the rough all can differ and all can affect a players score. In addition, there’s also probably some interaction effects that also make a difference in a players score. Golf is such a mental game, a big part of scoring well is playing with confidence. That mental component could very much lead and effect a players ability to play in the middle of a tournament, for example hitting the fairway off the tee, then hitting a green in regulation could effect a players confidence, hence affecting their ability to make the putt. All things to consider when trying to figure out ways to improve. Regardless though, the gameplan should be the same for all levels: get to the green as quickly as possible."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this blog"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "my_blog",
-    "section": "",
-    "text": "Golf Analysis\n\n\n\n\n\n\n\n\nAdam Bitner\n\n\n\n\n\nNo matching items"
   }
 ]

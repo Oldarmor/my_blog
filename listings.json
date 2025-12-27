@@ -1,8 +1,13 @@
 [
   {
+    "listing": "/posts/index.html",
+    "items": []
+  },
+  {
     "listing": "/index.html",
     "items": [
-      "/posts/Golf Analysis.html"
+      "/posts/Golf Analysis.html",
+      "/posts/index.html"
     ]
   }
 ]
