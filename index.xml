@@ -10,7 +10,7 @@
 <atom:link href="https://Oldarmor.github.io/my_blog/index.xml" rel="self" type="application/rss+xml"/>
 <description>Stats, coding, faith, and reflections</description>
 <generator>quarto-1.8.24</generator>
-<lastBuildDate>Sat, 27 Dec 2025 00:07:41 GMT</lastBuildDate>
+<lastBuildDate>Sat, 27 Dec 2025 00:10:58 GMT</lastBuildDate>
 <item>
   <title>Golf Analysis</title>
   <dc:creator>Adam Bitner</dc:creator>
@@ -148,7 +148,7 @@
 
  ]]></description>
   <guid>https://Oldarmor.github.io/my_blog/posts/Golf Analysis.html</guid>
-  <pubDate>Sat, 27 Dec 2025 00:07:41 GMT</pubDate>
+  <pubDate>Sat, 27 Dec 2025 00:10:58 GMT</pubDate>
 </item>
 <item>
   <title>Posts</title>
@@ -165,12 +165,31 @@
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1763008316572" data-listing-reading-time-sort="7" data-listing-word-count-sort="1389">
+<div class="thumbnail"><a href="../posts/Golf Analysis.html" class="no-external">
 
+<!-- img(9CEB782EFEE6)[progressive=false, height=]:listing:posts/Golf Analysis.html -->
+
+</a></div>
+<div class="body">
+
+<div class="delink listing-description"><a href="../posts/Golf Analysis.html" class="no-external">
+<!-- desc(5A0113B34292)[max=175]:posts/Golf Analysis.html -->
+</a></div>
+</div>
+<div class="metadata">
+<a href="../posts/Golf Analysis.html" class="no-external">
+<div class="listing-author">
+Adam Bitner
+</div>
+</a>
+</div>
+</div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div> ]]></description>
   <guid>https://Oldarmor.github.io/my_blog/posts/</guid>
-  <pubDate>Sat, 27 Dec 2025 00:07:41 GMT</pubDate>
+  <pubDate>Sat, 27 Dec 2025 00:10:58 GMT</pubDate>
 </item>
 </channel>
 </rss>
